@@ -1,3 +1,42 @@
 html {
     font-size: 18px; 
 }
+
+/*MOBIL*/
+@media only screen and (max-width:800px) {
+
+    #menu{
+        display: none;
+    }
+
+    #grid-container{
+        grid-template-columns: 1 fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    header, main, aside, footer{
+        grid-column: 1/2;
+    }
+
+    header{
+        grid-row: 1/2;
+    }
+
+    main{
+        grid-row: 2/3;
+    }
+
+    aside{
+        display: none;
+    }
+
+    footer{
+        grid-row: 3/4;
+    }
+
+}
+
+img {
+    width: 100%; /* Bildet tar opp 100% av containerens bredde */
+    max-width: 400px; /* Setter en maksimal bredde på 400px for bilder */
+}
