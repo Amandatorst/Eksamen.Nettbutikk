@@ -33,6 +33,8 @@
         </nav>
      </header>
 
+
+<main>
 <h2>Handlekurv</h2>
 
 <section id="Shoppingbag">
@@ -73,20 +75,36 @@
         <label for="poststed">Poststed</label>
         <input type="text" id="poststed" name="Poststed" maxlength="20" required >
 
-        <input type="submit">
+        <label for="avbryt">Avbryt</label>
+        <button type="reset" name="avbryt"></button>
+
+        <label for="submit">Send inn</label>
+        <button type="submit" name="send_inn"</button>
     </form>
+</section>
+
+<section id="levering">
+    <label>
+        Levering
+        <select name="leveringsvalg">
+            <option value="ekspresslevering_hjem">Ekspresslevering hjem</option>
+            <option value="ekspress_pakke_til_utleveringssted">Ekspress pakke til utleveringssted </option>
+            <option value="standard_hjemlevering">Standard hjemlevering</option>
+        </select>
+    </label>
 </section>
 
 
 
-     <main>
 
-        <section id="tilgjengelighetserklæring">
+     
+
+    <section id="tilgjengelighetserklæring">
             <h2>Tilgjengelighetserklæring</h2>
 
-        </section>
+     </section>
 
-     </main>
+ </main>
 
      <footer>
        
@@ -127,3 +145,5 @@
     
     </footer>
     
+    </body>
+</html>
