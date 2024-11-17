@@ -10,15 +10,12 @@
     <link href="FontAwesomeIkoner/css/solid.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css"> 
     <!-- Kobler til en ekstern CSS-fil for styling av nettstedet -->
-    <title>Nettbutikk | Handlekurv</title>
+    <title>Nettbutikk | Forside</title>
     <!-- Tittelen på nettsiden, vises i nettleserfanen -->
 </head>
 <body>
     <header>
-   
-        <a href="index.html">LOGO</a></li>
-    
-         <form>
+        <form>
             <label for="search">Søk</label>
             <input type="search" placeholder="Søk her..." id="search">
             <input type="submit" value="søk">
@@ -27,11 +24,106 @@
         <nav>
             <ul class="navigasjonsbar">
                 <li><a href="index.html">Hjem</a></li>
-                <li><a href="#Våre_mest_populære_produkter">Produkter</a></li>
-                <li><a href="#Våre_mest_populære_kategorier">Kategorier</a></li>
+                <li><a href="index.html#Våre_mest_populære_produkter">Produkter</a></li>
+                <section id="logo"> <h1><a href="index.html">LOGO</a></h1></section>
+                <li><a href="index.html#Våre_mest_populære_kategorier">Kategorier</a></li>
                 <li><a href="#Kontakt">Kontakt oss</a></li>
-                <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </ul>
         </nav>
      </header>
+
+<h2>Handlekurv</h2>
+
+<section id="Shoppingbag">
+    <article class="product-card">
+        <img src="img/Produktkort.jpg" alt="Hvitt antrekk i ørkenen">
+        <a href="product.html"><h3>Product name</h3></a>
+        <!-- Produktnavn som lenke -->
+        <p> 1699 kr</p>
+        <!-- Pris på produktet -->
+         <p> Hvit </p>
+    </article>
+
+    <article class="product-card">
+        <img src="img/Produktkort.jpg" alt="Hvitt antrekk i ørkenen">
+        <a href="product.html"><h3>Product name</h3></a>
+        <!-- Produktnavn som lenke -->
+        <p> 1699 kr</p>
+        <!-- Pris på produktet -->
+         <p> Hvit </p>
+    </article>
+
+</section>
+
+<section id="Personopplysninger">
+    <form method="post">
+        <label for="fornavn">Fornavn:</label>
+        <input type="text" name="fornavn" placeholder="Kari" id="fornavn" maxlength="25" required>
+        <label for="etternavn">Etternavn:</label>
+        <input type="text" name="etternavn" placeholder="Nordmann" id="etternavn" maxlength="40" required>
+
+        
+        <label for="gateadresse">Gateadresse</label>
+        <input type="text"  name="street-address" placeholder="B.R.A. veien 4" id="street-address" maxlength="45" required>
+   
+        <label for="postnummer">Postnummer</label>
+        <input type="text" id="postal-code" name="Postnummer" maxlength="4" pattern="0-9" required>
+
+        <label for="poststed">Poststed</label>
+        <input type="text" id="poststed" name="Poststed" maxlength="20" required >
+
+        <input type="submit">
+    </form>
+</section>
+
+
+
+     <main>
+
+        <section id="tilgjengelighetserklæring">
+            <h2>Tilgjengelighetserklæring</h2>
+
+        </section>
+
+     </main>
+
+     <footer>
+       
+        <section id="Logo_og_ingress">
+            <h2>LOGO</h2>
+            <h3>"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h3>
+        </section>
+       
+        <section id="Kontakt">
+            <h2>Kontakt oss</h2>
+            <h3>Adresse: B.R.A. veien 4 Remmen, Halden</h3>
+            <h3>Telefon: 69 60 80 00</h3>
+            <h3>Epost: postmottak@hiof.no</h3>
+        </section>
+    
+        <section id="Snarveier">
+            <h2>Snarveier</h2>
+            <nav>
+                <ul>
+                    <li><a href="checkout.html#tilgjengelighetserklæring">Tilgjengelighetserklæring</a></li>
+                </ul>
+            </nav>
+        </section>
+    
+        <section id="Sosiale_medier">
+       
+            <h2>Sosiale medier</h2>
+        
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+    
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+            
+        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            
+        <a href="https://no.pinterest.com/#top"><i class="fa-brands fa-square-pinterest"></i></a>
+            
+        </section>
+    
+    </footer>
     
