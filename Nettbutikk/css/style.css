@@ -1,5 +1,68 @@
 html {
-    font-size: 18px; 
+    font-size: 18px; /* Setter grunnstørrelsen på teksten til 18px for hele dokumentet */
+}
+
+* {
+    box-sizing: border-box; /* Inkluderer padding og border i elementets totale bredde og høyde */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Setter fontfamilien til Arial, med fallback til Helvetica og sans-serif */
+}
+
+#logo{
+    width: 100%; /* Logoen tar opp 100% av containerens bredde */
+    max-width: 250px; /* Maksimal bredde på logoen er satt til 250px */
+    display: block; /* Gjør logoen til et blokk-element */
+    margin: 0px auto; /* Sentrerer logoen horisontalt */
+   
+}
+
+ul.navigasjonsbar{
+    position: middle;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+
+    a{
+        color: #474747;
+    }
+    a:hover {
+        color: #836644;
+        text-decoration: underline;
+      } 
+
+}
+
+
+#banner{
+    display: flex;
+    flex-wrap: wrap;
+
+    img{
+        max-width: 100%;
+    }
+}
+
+
+#Våre_mest_populære_produkter{
+    img{
+        max-width: 40%;
+    }
+}
+
+
+/*DESKTOP*/
+@media only screen and (min-width:800px){
+    .fa-burger{
+        display: none;
+    }
+    #menu{
+        display: flex !important;
+    }
+
 }
 
 /*MOBIL*/
@@ -40,3 +103,53 @@ img {
     width: 100%; /* Bildet tar opp 100% av containerens bredde */
     max-width: 400px; /* Setter en maksimal bredde på 400px for bilder */
 }
+
+
+
+
+ /* Style the list */
+ ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #ffffff;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #c0a282;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #836644;
+    text-decoration: underline;
+  } 
+
+
+/* Container holding the image and the text */
+.banner {
+    position: relative;
+    text-align: left;
+    color: white;
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+
+
