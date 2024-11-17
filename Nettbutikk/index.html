@@ -15,10 +15,7 @@
 </head>
 <body>
  <header>
-   
-   <h1><a href="index.html">LOGO</a></h1>
-<a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
-     <form>
+    <form>
         <label for="search">Søk</label>
         <input type="search" placeholder="Søk her..." id="search">
         <input type="submit" value="søk">
@@ -27,23 +24,25 @@
     <nav>
         <ul class="navigasjonsbar">
             <li><a href="index.html">Hjem</a></li>
-            <li><a href="#Våre_mest_populære_produkter">Produkter</a></li>
-            <li><a href="#Våre_mest_populære_kategorier">Kategorier</a></li>
+            <li><a href="index.html#Våre_mest_populære_produkter">Produkter</a></li>
+            <section id="logo"> <h1><a href="index.html">LOGO</a></h1></section>
+            <li><a href="index.html#Våre_mest_populære_kategorier">Kategorier</a></li>
             <li><a href="#Kontakt">Kontakt oss</a></li>
+            <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </ul>
     </nav>
  </header>
 
  <main>
+
    
-    <section id="banner">
-        <!-- Definerer en seksjon for spesifikke innholdstyper, her brukt for de beste tilbudene -->
-        
-            <h2>At vero eos et accusamus</h2>
-            <img src="img/Banner.jpg" alt="Strand i tåke">
-             <!-- Et bilde til banneret -->
-            <a href="#">Se hvordan vi bidrar til et lavt klimagassutslipp her</a>
-            <h3>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</h3>
+    <div class="banner">
+        <img src="img/Banner.jpg" alt="Strand i tåke" style="width:100%;">
+        <div class="top-left"><a href="#">Vi bidrar til et lavt klimagassutslipp</a>
+            <h3>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</h3>
+       </div>
+    </div>
+            
   
   </section>
    
@@ -229,6 +228,11 @@
 
     <section id="Snarveier">
         <h2>Snarveier</h2>
+        <nav>
+            <ul>
+                <li><a href="checkout.html#tilgjengelighetserklæring">Tilgjengelighetserklæring</a></li>
+            </ul>
+        </nav>
     </section>
 
     <section id="Sosiale_medier">
