@@ -10,13 +10,12 @@
     <link href="FontAwesomeIkoner/css/solid.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css"> 
     <!-- Kobler til en ekstern CSS-fil for styling av nettstedet -->
-    <title>Nettbutikk | Forside</title>
+    <title>Nettbutikk | Eksamen</title>
     <!-- Tittelen på nettsiden, vises i nettleserfanen -->
 </head>
 <body>
     <header>
         <form>
-            <label for="search">Søk</label>
             <input type="search" placeholder="Søk her..." id="search">
             <input type="submit" value="søk">
         </form>
@@ -63,22 +62,22 @@
     <h2>Personopplysninger</h2>
     <form method="post">
         <label for="fornavn">Fornavn</label>
-        <input type="text" name="fornavn" placeholder="Fornavn*" id="fornavn" maxlength="25" required>
+        <input type="text" name="fornavn" placeholder="Nora*" id="fornavn" maxlength="25" required>
         <label for="etternavn">Etternavn</label>
-        <input type="text" name="etternavn" placeholder="Etternavn*" id="etternavn" maxlength="40" required>
+        <input type="text" name="etternavn" placeholder="Nordmann*" id="etternavn" maxlength="40" required>
 
         <label for="gateadresse">Gateadresse</label>
-        <input type="text" name="gateadresse" placeholder="Gateadresse*" id="gateadresse" maxlength="45" required>
+        <input type="text" name="gateadresse" placeholder="BRA veien 4*" id="gateadresse" maxlength="45" required>
    
         <label for="postnummer">Postnummer</label>
-        <input type="text" id="postnummer" name="Postnummer" placeholder="Postnummer*" maxlength="4" pattern="0-9" required>
+        <input type="number" name="Postnummer" placeholder="1752*" id="postnummer" required>
 
         <label for="poststed">Poststed</label>
-        <input type="text" id="poststed" name="Poststed" placeholder="Poststed*" maxlength="20" required >
+        <input type="text" id="poststed" name="Poststed" placeholder="Halden*" maxlength="20" required >
 
         <button type="reset">Avbryt</button>
 
-        <button type="button">Lagre</button>
+        <button type="submit">Lagre</button>
        
 
     </form>
@@ -86,17 +85,23 @@
 
 <section id="levering">
     <h2>Leveringsvalg</h2>
-    <label>
-        Levering
-        <select name="leveringsvalg">
-            <option value="ekspresslevering_hjem">Ekspresslevering hjem</option>
-            <option value="ekspress_pakke_til_utleveringssted">Ekspress pakke til utleveringssted</option>
-            <option value="standard_hjemlevering">Standard hjemlevering</option>
-        </select>
-    </label>
+<label>
+    Ekspresslevering hjem
+    <input type="radio" name="valg">
+   </label>
+
+<label>
+    Ekspress pakke til utleveringssted
+    <input type="radio" name="valg">
+</label>
+
+<label>
+    Standard hjemlevering
+    <input type="radio" name="valg">
+</label>
 </section>
 
-<section id="Betaling">
+<section id="betaling">
     <label for="kortnummer">Kortnummer</label>
         <input type="text" id="kortnummer" name="kortnummer" placeholder="112365********44" minlength="16" maxlength="16" pattern="0-9" required>
         
@@ -110,25 +115,25 @@
             Å betale inkl. mva. 
             3398 kr
         </h3>
-        <button type="button">Fullfør kjøp</button>
-
+        <button type="submit">Fullfør kjøp</button>
+</section>
        
 
-
+<section id="samtykke">
         <h4>
             Du bekrefter herved at opplysningene og dokumentene du har
             oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg
             retten til å heve eller avslutte avtaleforholdet dersom det foreligger
             uriktige eller ufullstendige opplysninger.
         </h4>
- <label>
-            Ja takk! Send nyhetsbrev til meg
+        <p><label>
+            Ja takk! Send nyhetsbrev til meg.
             <input type="checkbox" name="valg">
-        </label>
-        <label>
-            Ja, jeg godtar vilkårene
+        </label></p>
+        <p><label>
+            Jeg ønsker å motta tekstmeldinger med tilbud og nyheter. 
             <input type="checkbox" name="valg">
-        </label>
+        </label></p>
 </section>
 
 
@@ -144,7 +149,7 @@
        
     <section id="Logo_og_ingress">
         <h2>LOGO</h2>
-        <h3>"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h3>
+        <p>"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
     </section>
    
     <section id="Kontakt">
