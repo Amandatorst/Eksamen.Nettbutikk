@@ -1,5 +1,8 @@
 html {
     font-size: 18px; /* Setter grunnstørrelsen på teksten til 18px for hele dokumentet */
+    max-width: 800px;
+    text-align: left;
+    padding: 10px;
 }
 
 * {
@@ -7,177 +10,322 @@ html {
 }
 
 body {
-    font-family: sans-serif, Arial, Helvetica; /* Setter fontfamilien til Arial, med fallback til Helvetica og sans-serif */
-}
-
-#logo{
-    width: 100%; /* Logoen tar opp 100% av containerens bredde */
-    max-width: 250px; /* Maksimal bredde på logoen er satt til 250px */
-    display: block; /* Gjør logoen til et blokk-element */
-    margin: 0px auto; /* Sentrerer logoen horisontalt */
-   
-}
-
-ul.navigasjonsbar{
-    position: middle;
-    display: flex;
-    list-style: none;
-    padding: 1%;
-    margin: 0;
-    gap:2%;
-    width: 100;
-
-    a{
-        color: #474747;
-        text-decoration: none;
-    }
-    a:hover {
-        color: #836644;
-        text-decoration: underline;
-      } 
-
-}
-
-
-#banner{
-    display: flex;
-    flex-wrap: wrap;
-
-    img{
-        width: 100%;
-    }
-}
-#bannerlenke{
-    padding:1%;
-    background-color: rgb(255, 255, 255);
-    width: 55%;
-   
-    text-align: right;
-    a{color: rgb(0, 0, 0);
-    text-decoration: none;}
+    font-family: sans-serif; /* Setter fontfamilien til Arial, med fallback til Helvetica og sans-serif */
     
-}
-
-
-
-#Våre_mest_populære_produkter{
-    img{
-        max-width: 100%;
-    }
-}
-
-.knapp {
-    border-color: black;
-    background-color: transparent;
-    padding: 5%;
-}
-
-/*DESKTOP*/
-@media only screen and (min-width:800px){
-    .fa-burger{
-        display: none;
-    }
-    #menu{
-        display: flex !important;
-    }
-
-}
-
-/*MOBIL*/
-@media only screen and (max-width:800px) {
-
-    #menu{
-        display: none;
-    }
-
-    #grid-container{
-        grid-template-columns: 1 fr;
-        grid-template-rows: auto auto auto auto;
-    }
-
-    header, main, aside, footer{
-        grid-column: 1/2;
-    }
-
-    header{
-        grid-row: 1/2;
-    }
-
-    main{
-        grid-row: 2/3;
-    }
-
-    aside{
-        display: none;
-    }
-
-    footer{
-        grid-row: 3/4;
-    }
-
+    
 }
 
 img {
     width: 100%; /* Bildet tar opp 100% av containerens bredde */
-    max-width: 400px; /* Setter en maksimal bredde på 400px for bilder */
+}
+
+/*_________SØKEFELT_START_________*/
+
+form input{
+       border-style:solid ; 
+       background-color: #ffffff;
+       border-color: #000000;
+       padding: 10%;
+       padding-top: 5%;
+       padding-bottom:5%;
+    }
+    
+/*___________SØKEFELT_SLUTT__________*/
+
+
+
+    ul.navigasjonsbar {
+        list-style: none; /* Fjern standard kulepunkter */
+        padding: 10px; /* Fjern standard padding */
+        margin: 0; /* Fjern standard margin */
+        line-height: 30px; /* Juster høyden på linjene */
+        max-width: 100%; /* Sørg for at den ikke overskrider tilgjengelig plass */
+    }
+    
+    ul.navigasjonsbar li {
+        display: block; /* Gjør hvert listeelement til en inline-element */
+        margin-right: 5%; /* Legg til avstand mellom elementene */
+    }
+    
+    ul.navigasjonsbar a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    /* Hover-funksjonen under var ikke del av E-kravet, 
+    men var en kjekk funksjon som var lett å legge inn 
+    så jeg valgte å legge det inn likevel
+    Koden hentet fra: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp */
+
+    ul.navigasjonsbar a:hover { 
+        color: #836644;
+        text-decoration: underline;
+    }
+
+
+/* -___________Banner_START________*/
+    
+#bannerlenke{
+    padding: 1px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #ffffff;
+    width: 100%;
+    text-align:right;
+}
+
+.banner h2{
+    font-size: 20px;
+    color: #ffffff;
+}
+    
+
+
+#bannerlenke a{
+    color: #000000;
+    text-decoration:none; 
+    font-size: 20px;
+}
+
+.banner {
+    position: relative;
+    text-align: right;
+    color: rgb(255, 255, 255);  
+    background-color: #9fb7bc;
+    padding: 20px;
+}
+    
+.banner img{
+        width: 100%        
+}
+
+.top-right { /*teksten på bannerets posisjon*/
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    left: 140px;
+}
+/*_________BANNER_SLUTT_________*/
+
+
+
+/*____________PRODUKTSEKSJON_FORSIDE_START______*/
+
+#Våre_mest_populære_produkter h2{
+    font-size: 25px;
+}
+
+.Våre_mest_populære_produkter{
+    display: block;
 }
 
 
+.Våre_mest_populære_produkter img{
+        width: 100%;
+    }
+
+.knapp { /* knapper for våre mest populære produkter */
+    border-color: black;
+    border-style: solid;
+    background-color: transparent;
+    padding: 5%;
+    margin:10px;
+}
+/*____________PRODUKTSEKSJON_FORSIDE_SLUTT_______*/
 
 
- /* Style the list */
+
+/*____________KATEGORISEKSJON_FORSIDE_SLUTT_______*/
+#Våre_mest_populære_kategorier article{
+    background-color: #98897c;
+    color: #f1eeea;
+    width: 100%;
+    height: 300px;
+    border-style: double;
+    border-width: 30px;
+    border-color: #000000;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 30px;
+
+}
+
+/*____________KATEGORISEKSJON_FORSIDE_SLUTT_______*/
+
+
+
+/*_____BRØDSMULESTI_START_______*/
  ul.breadcrumb {
     padding: 10px 16px;
     list-style: none;
     background-color: #ffffff;
   }
   
-  /* Display list items side by side */
   ul.breadcrumb li {
     display: inline;
     font-size: 18px;
   }
   
-  /* Add a slash symbol (>) before/behind each list item */
   ul.breadcrumb li+li:before {
     padding: 8px;
     color: black;
     content: ">\00a0";
   }
   
-  /* Add a color to all links inside the list */
   ul.breadcrumb li a {
     color: #c0a282;
     text-decoration: none;
   }
   
-  /* Add a color on mouse-over */
   ul.breadcrumb li a:hover {
     color: #836644;
     text-decoration: underline;
   } 
+/*_____BRØDSMULESTI_SLUTT_______*/
 
 
-/* Container holding the image and the text */
-.banner {
-    position: relative;
-    text-align: right;
-    color: white;
 
-/* Top right text */
-.top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
+/*_______ANNMELDELSER_START________*/
+#anmeldelser article{
+    border: black;
+    border-style: solid;
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 20px;
 }
-
-anmeldelser {
-
-    img{
-        max-width: 20%;
+#anmeldelser img{
+        max-width: 150px;
     }
+/*_______ANNMELDELSER_SLUTT________*/
 
+
+
+
+
+/*______PRODUKTSIDEN_START_____*/
+
+/*_____PRODUKTBILDER_____*/
+#produktbilder{
+    display: block;
+    width: 100%;
+}
+#produktbilder h2{
+        color: transparent;
+        font-size: small;
+}
+#produktbilder img{
+    padding-bottom: 20px;
+}
+/*_____PRODUKTBILDER_____*/
+
+/*_____PRODUKTSIDEN_SLUTT_____*/
+
+
+
+
+
+
+
+/*______KASSESIDE_START______*/
+
+/*____SHOPPINGBAG____*/
+#shoppingbag{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+#shoppingbag img{
+    width: 100%;
+}
+/*____SHOPPINGBAG____*/
+
+
+
+/*___SKJEMAER_KASSESIDEN_START____*/
+/*____PERSONOPPLYSNINGER_START______*/
+
+#personopplysninger{
+    padding: 20px;
+}
+
+#personopplysninger button{
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+}
+
+#personopplysninger label{
+    line-height: 50px;
+}
+
+#personopplysninger input {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    border-color: #000000;
+    text-align: left;
+  }
+/*____PERSONOPPLYSNINGER_SLUTT______*/
+
+
+
+/*____BETALING_START______*/
+#betaling{
+    padding: 20px;
+}
+
+#betaling button {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    
+}
+
+#betaling label{
+    line-height: 50px;
+}
+
+#betaling input {
+    width: 100%;
+    padding: 10px; 
+    background-color: #ffffff;
+    border-color: #000000;
+    text-align: left;
+}
+/*_____BETALING_SLUTT______*/
+
+#levering h2{
+    color: transparent;
+    font-size: small;
+}
+
+#levering{
+    text-align: left;
+    padding: 20px;
+}
+#levering label{
+    display: block;
+    line-height: 30px;
+    
+}
+
+input[type="radio"]{
+    accent-color:#000000
+    
+}
+
+#samtykke{
+    padding: 20px;
+    display: block;
+}
+
+#samtykke input{
+    accent-color: #000000;
 }
 
 
 
+
+/*___SKJEMAER_KASSESIDEN_SLUTT____*/
