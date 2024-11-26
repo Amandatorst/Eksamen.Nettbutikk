@@ -93,11 +93,10 @@ form input{
     color: rgb(255, 255, 255);  
     background-color: #9fb7bc;
     padding: 20px;
+    width: 100%;
+    height: 300px;
 }
     
-.banner img{
-        width: 100%        
-}
 
 .top-right { /*teksten på bannerets posisjon*/
     position: absolute;
@@ -115,8 +114,20 @@ form input{
     font-size: 25px;
 }
 
-.Våre_mest_populære_produkter{
+#Våre_mest_populære_produkter{
     display: block;
+    
+}
+
+#Våre_mest_populære_produkter a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.Våre_mest_populære_produkter article {
+
+
+    text-decoration: none;
 }
 
 
@@ -137,20 +148,35 @@ form input{
 
 /*____________KATEGORISEKSJON_FORSIDE_SLUTT_______*/
 #Våre_mest_populære_kategorier article{
-    background-color: #98897c;
-    color: #f1eeea;
+    background-color: #dad5cd;
+    color: #ffffff;
     width: 100%;
     height: 300px;
-    border-style: double;
-    border-width: 30px;
+    border-style: solid;
+    border-width: 2px;
     border-color: #000000;
     text-align: center;
     align-content: center;
     margin-bottom: 30px;
-
 }
 
 /*____________KATEGORISEKSJON_FORSIDE_SLUTT_______*/
+
+
+
+/*_______ANNMELDELSER_START________*/
+#anmeldelser article{
+    border: black;
+    border-style: solid;
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 20px;
+}
+
+#anmeldelser img{
+        max-width: 150px;
+    }
+/*_______ANNMELDELSER_SLUTT________*/
 
 
 
@@ -185,21 +211,6 @@ form input{
 
 
 
-/*_______ANNMELDELSER_START________*/
-#anmeldelser article{
-    border: black;
-    border-style: solid;
-    margin-bottom: 20px;
-    text-align: left;
-    padding: 20px;
-}
-#anmeldelser img{
-        max-width: 150px;
-    }
-/*_______ANNMELDELSER_SLUTT________*/
-
-
-
 
 
 /*______PRODUKTSIDEN_START_____*/
@@ -209,14 +220,58 @@ form input{
     display: block;
     width: 100%;
 }
+
+#produktnavn a{
+    text-decoration: none;
+    color: #000000;
+}
+
+#produktnavn button{
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+#produktnavn select{
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
 #produktbilder h2{
         color: transparent;
         font-size: small;
 }
+
 #produktbilder img{
     padding-bottom: 20px;
 }
+
 /*_____PRODUKTBILDER_____*/
+
+
+/*_________LIGNENDE_PRODUKTER________*/
+
+#produktkort article a{
+    text-decoration: none;
+    color: #000000;
+}
+
+#produktkort img{
+    width: 100%;
+}
+
+#produktkort article{
+    display: block;
+}
+
+/*_________LIGNENDE_PRODUKTER________*/
+
+
 
 /*_____PRODUKTSIDEN_SLUTT_____*/
 
@@ -279,8 +334,7 @@ form input{
     width: 100%;
     background-color: #000000;
     color: #ffffff;
-    padding: 10px;
-    
+    padding: 10px;   
 }
 
 #betaling label{
