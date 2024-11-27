@@ -91,7 +91,7 @@ form input{
     position: relative;
     text-align: right;
     color: rgb(255, 255, 255);  
-    background-color: #9fb7bc;
+    background-color: #799094;
     padding: 20px;
     width: 100%;
     height: 300px;
@@ -148,7 +148,7 @@ form input{
 
 /*____________KATEGORISEKSJON_FORSIDE_SLUTT_______*/
 #Våre_mest_populære_kategorier article{
-    background-color: #dad5cd;
+    background-color: #7f7a72;
     color: #ffffff;
     width: 100%;
     height: 300px;
