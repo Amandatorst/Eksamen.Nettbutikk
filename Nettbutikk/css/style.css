@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: sans-serif;    /* Nettstedet har font sans-seriff */
+    font-family:sans-serif;    /* Nettstedet har font sans-seriff */
     
 }
 
@@ -20,7 +20,7 @@ img {
 
 /*_________SØKEFELT_START_________*/
 
-form input{
+form input{                         /* Input gjelder både for søkefelt og for tilhørende knapp */
        border-style:solid ; 
        border-color: #000000;
        background-color: #ffffff;
@@ -40,7 +40,7 @@ form input{
         list-style: none; /* Fjern standard kulepunkter */
         padding: 10px; /* Fjern standard padding */
         margin: 0; /* Fjern standard margin */
-        line-height: 30px; /* Juster høyden på linjene */
+        line-height: 35px; /* Juster høyden på linjene */
         max-width: 100%; /* Sørg for at den ikke overskrider tilgjengelig plass */
     }
     
@@ -268,6 +268,10 @@ form input{
 
 #produktkort article{
     display: block;        /* Innholder faller under hverandre */
+}
+
+#produktkort{
+    width: 100%;
 }
 
 /*_________LIGNENDE_PRODUKTER________*/
