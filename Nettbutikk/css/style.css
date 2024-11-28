@@ -333,6 +333,20 @@ form input{
 /*____PERSONOPPLYSNINGER_SLUTT______*/
 
 
+#levering{
+    text-align: left;
+    padding: 20px;
+}
+#levering label{
+    display: block;
+    line-height: 30px;
+    
+}
+
+input[type="radio"]{
+    accent-color:#000000
+    
+}
 
 /*____BETALING_START______*/
 #betaling{
@@ -359,37 +373,22 @@ form input{
 }
 /*_____BETALING_SLUTT______*/
 
-
-
-#levering{
-    text-align: left;
-    padding: 20px;
-}
-#levering label{
-    display: block;
+#betaling #samtykke{
     line-height: 30px;
-    
 }
 
-input[type="radio"]{
-    accent-color:#000000
-    
+#betaling #samtykke label {
+    display: flex; /* Flexbox for horisontal plassering */
+    align-items: center; /* Justerer avhukingsboks og tekst vertikalt */
+    gap: 5px; /* Mindre mellomrom mellom avhukingsboks og tekst */
+    margin-bottom: 50px; /* Redusert avstand mellom radene */
+    line-height: 30px;
 }
 
-#samtykke {
-    padding: 20px;
-    display: block;        /* Innholder faller under hverandre */
+#betaling #samtykke input[type="checkbox"] {
+    accent-color: #000000; /* Valgfri styling for avhukingsboksene */
+    width: auto; /* Sørg for at avhukingsboksen holder seg i standard størrelse */
 }
-
-#samtykke label{
-    display: block;
-}
-
-#samtykke input{
-    accent-color: #000000;
-}
-
-
 /*___SKJEMAER_KASSESIDEN_SLUTT____*/
 
 
