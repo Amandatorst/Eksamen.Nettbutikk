@@ -10,8 +10,10 @@
     <link href="FontAwesomeIkoner/css/solid.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css"> 
     <!-- Kobler til en ekstern CSS-fil for styling av nettstedet -->
+
     <title>Nettbutikk | Eksamen</title>
     <!-- Tittelen på nettsiden, vises i nettleserfanen -->
+
 </head>
 <body>
     <header>
@@ -34,10 +36,10 @@
 
 
 <main>
-<h2>Handlekurv</h2>
+<h2>Kasse</h2>
 
 <section id="shoppingbag">
-    <h2>Handlekurven din</h2>
+    <h2>Shoppingbagen din</h2>
     <article class="product-card">
         <img src="img/Produktkort.jpg" alt="Hvitt antrekk i ørkenen">
         <a href="product.html"><h3>Product name</h3></a>
@@ -75,33 +77,34 @@
         <label for="poststed">Poststed</label>
         <input type="text" id="poststed" name="Poststed" placeholder="Halden*" minlength="2" maxlength="20" required >
 
-        <button type="reset">Avbryt</button>
-
         <button type="submit">Lagre</button>
-       
+        <button type="reset">Avbryt</button>
 
     </form>
 </section>
 
 <section id="levering">
-    <h2>Leveringsvalg</h2>
+    <h2>Levering</h2>
 <label>
-    Ekspresslevering hjem
     <input type="radio" name="valg">
+     Ekspresslevering hjem
    </label>
 
 <label>
-    Ekspress pakke til utleveringssted
     <input type="radio" name="valg">
+    Ekspress pakke til utleveringssted
 </label>
 
 <label>
-    Standard hjemlevering
     <input type="radio" name="valg">
+    Standard hjemlevering
 </label>
+<!-- Radio input gjør at brukeren kun kan huke av ett av de tre valgene -->
 </section>
 
+
 <section id="betaling">
+    <h2>Betaling</h2>
     <label for="kortnummer">Kortnummer</label>
         <input type="text" id="kortnummer" name="kortnummer" placeholder="112365********44" minlength="16" maxlength="16" pattern="0-9" required>
         
@@ -126,23 +129,16 @@
             retten til å heve eller avslutte avtaleforholdet dersom det foreligger
             uriktige eller ufullstendige opplysninger.
         </h4>
-        <p><label>
+        <label>
+            <input type="checkbox" name="valg">
             Ja takk! Send nyhetsbrev til meg.
+        </label>
+        
+        <label>
             <input type="checkbox" name="valg">
-        </label></p>
-        <p><label>
-            Jeg ønsker å motta tekstmeldinger med tilbud og nyheter. 
-            <input type="checkbox" name="valg">
-        </label></p>
+            Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
+        </label>
 </section>
-
-
-     
-
-    <section id="tilgjengelighetserklæring">
-            <h2>Tilgjengelighetserklæring</h2>
-
-     </section>
 
 </main>
 <footer>
@@ -163,7 +159,7 @@
         <h2>Snarveier</h2>
         <nav>
             <ul>
-                <li><a href="checkout.html#tilgjengelighetserklæring">Tilgjengelighetserklæring</a></li>
+                <li><a href="Tilgjengelighetserklæring.pdf">Tilgjengelighetserklæring</a></li>
             </ul>
         </nav>
     </section>
