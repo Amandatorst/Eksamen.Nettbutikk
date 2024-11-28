@@ -10,8 +10,7 @@ html {
 }
 
 body {
-    font-family: sans-serif; /* Setter fontfamilien til Arial, med fallback til Helvetica og sans-serif */
-    
+    font-family: sans-serif;    
     
 }
 
@@ -23,15 +22,18 @@ img {
 
 form input{
        border-style:solid ; 
-       background-color: #ffffff;
        border-color: #000000;
+       background-color: #ffffff;
        padding: 10%;
-       padding-top: 5%;
-       padding-bottom:5%;
+       padding-top: 2%;
+       padding-bottom:2%;
     }
     
 /*___________SØKEFELT_SLUTT__________*/
 
+
+
+/*____Navigasjonsbar_start______*/
 
 
     ul.navigasjonsbar {
@@ -43,8 +45,7 @@ form input{
     }
     
     ul.navigasjonsbar li {
-        display: block; /* Gjør hvert listeelement til en inline-element */
-        margin-right: 5%; /* Legg til avstand mellom elementene */
+        display: block; /* alt faller under hverandre */
     }
     
     ul.navigasjonsbar a {
@@ -62,8 +63,12 @@ form input{
         text-decoration: underline;
     }
 
+/*_____Navigasjonsbar_slutt______*/
 
-/* -___________Banner_START________*/
+
+
+
+/* ________Banner_START________*/
     
 #bannerlenke{
     padding: 1px;
@@ -79,8 +84,6 @@ form input{
     color: #ffffff;
 }
     
-
-
 #bannerlenke a{
     color: #000000;
     text-decoration:none; 
@@ -90,7 +93,7 @@ form input{
 .banner {
     position: relative;
     text-align: right;
-    color: rgb(255, 255, 255);  
+    color: #ffffff;  
     background-color: #3b4c4e;
     padding: 20px;
     width: 100%;
@@ -111,7 +114,7 @@ form input{
 /*____________PRODUKTSEKSJON_FORSIDE_START______*/
 
 #Våre_mest_populære_produkter h2{
-    font-size: 25px;
+    font-size: 25px;                /*Gjør overskriften for seksjonen tydelig*/
 }
 
 #Våre_mest_populære_produkter{
@@ -147,14 +150,22 @@ form input{
 
 
 /*____________KATEGORISEKSJON_FORSIDE_SLUTT_______*/
+#Våre_mest_populære_kategorier h2{
+    font-size: 25px;                /*Gjør overskriften for seksjonen tydelig*/
+}
+
+
 #Våre_mest_populære_kategorier article{
     background-color: #44423d;
     color: #ffffff;
-    width: 100%;
-    height: 300px;
+
+    width: 100%;            /*bredden på kategorikortet*/
+    height: 300px;          /*høyden på kategorikortet*/
+
     border-style: solid;
     border-width: 2px;
     border-color: #000000;
+
     text-align: center;
     align-content: center;
     margin-bottom: 30px;
@@ -177,6 +188,7 @@ form input{
         max-width: 150px;
     }
 /*_______ANNMELDELSER_SLUTT________*/
+
 
 
 
@@ -288,11 +300,19 @@ form input{
 #shoppingbag img{
     width: 100%;
 }
+
+#shoppingbag a{
+    text-decoration: none;
+    color: #000000;
+}
 /*____SHOPPINGBAG____*/
 
 
 
-/*___SKJEMAER_KASSESIDEN_START____*/
+/*___KASSESIDEN_SLUTT____*/
+
+
+
 /*____PERSONOPPLYSNINGER_START______*/
 
 #personopplysninger{
@@ -346,10 +366,7 @@ form input{
 }
 /*_____BETALING_SLUTT______*/
 
-#levering h2{
-    color: transparent;
-    font-size: small;
-}
+
 
 #levering{
     text-align: left;
@@ -366,8 +383,12 @@ input[type="radio"]{
     
 }
 
-#samtykke{
+#samtykke {
     padding: 20px;
+    display: block;
+}
+
+#samtykke label{
     display: block;
 }
 
@@ -376,6 +397,40 @@ input[type="radio"]{
 }
 
 
-
-
 /*___SKJEMAER_KASSESIDEN_SLUTT____*/
+
+
+#Logo_og_ingress{
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+#Kontakt{
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+
+ #Snarveier{
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+#Snarveier ul{
+    
+    list-style: none;
+    display: block;
+}
+
+#Snarveier a{
+    color: #000000;  
+}
+
+ #Sosiale_medier{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+ }
+
+ #Sosiale_medier a{
+    color: #000;
+    display: block;
+ }
